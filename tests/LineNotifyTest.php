@@ -32,4 +32,10 @@ class LineNotifyTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals($expected, KS\Line\LineNotify::API_URL);
   }
 
+$token = '7rdO1RFFFmLps33PLJ4ZoG3E3PBJ165HSdvlYlMve8V';
+$ln = new KS\Line\LineNotify($token);
+
+$text = 'Hello Line Notify';
+$ln->send($text);
+  
 }
